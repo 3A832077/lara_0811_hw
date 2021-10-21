@@ -6,6 +6,8 @@
 
         <title>Laravel</title>
         <h1>最新消息</h1>
+        <h2><a href="{{route('home.index')}}">首頁</a></h2>
+        <h2><a href="{{route('about.index')}}">關於本頁</a></h2>
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
