@@ -6,7 +6,8 @@
 
         <title>Laravel</title>
 		<h1>首頁</h1>
-
+        <h2><a href="{{route('about.index')}}">關於本頁</a></h2>
+        <h2><a href="{{route('news.index')}}">最新消息</a></h2>
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
@@ -20,7 +21,7 @@
                 font-family: 'Nunito', sans-serif;
             }
         </style>
-		
+
     </head>
 	<body class="antialiased">
         <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
