@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\AboutController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\newsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,14 +16,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [HomeController::class,'index'])->name('home.index');
 
-Route::get('/about', function () {
-    return view('about');
-});
+Route::get('/about', [aboutController::class,'index'])->name('about.index');
 
-Route::get('/news', function () {
-    return view('news');
-});
+Route::get('/news', [newsController::class,'index'])->name('news.index');
