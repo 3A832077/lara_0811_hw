@@ -6,8 +6,7 @@
 
     <title>Laravel</title>
     <h1>關於本站</h1>
-    <h2><a href="{{route('home.index')}}">首頁</a></h2>
-    <h2><a href="{{route('news.index')}}">最新消息</a></h2>
+
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
@@ -24,6 +23,7 @@
 
 </head>
 <body class="antialiased">
+  
 <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
     @if (Route::has('login'))
         <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
@@ -60,6 +60,8 @@
                         <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
                             Laravel has wonderful, thorough documentation covering every aspect of the framework. Whether you are new to the framework or have previous experience with Laravel, we recommend reading all of the documentation from beginning to end.
                         </div>
+						  <a href="{{route('home.index')}}">首頁</a>
+                          <a href="{{route('news.index')}}">最新消息</a>
                     </div>
                 </div>
                 <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-t-0 md:border-l">
